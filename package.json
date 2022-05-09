@@ -1,0 +1,21 @@
+{
+  "name": "ca5",
+  "version": "1.0.0",
+  "description": "ca5 test",
+  "main": "index.js",
+  "scripts": {
+    "main": "tsc && node ./dist/main.js",
+    "test": "tsc && jest ./dist",
+    "express": "tsc && node ./dist/src/infra/http/express.js",
+    "hapi": "tsc && node ./dist/src/infra/http/hapi.js"
+  },
+  "author": "Rafael Paes",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.2",
+    "@types/jest": "^27.4.1",
+    "express": "^4.18.0",
+    "jest": "^28.0.2",
+    "pg-promise": "^10.11.1"
+  }
+}
